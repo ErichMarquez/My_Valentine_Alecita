@@ -46,18 +46,18 @@ noBtn.addEventListener("mouseover", () => {
     yesBtn.style.transform = `scale(${yesScale})`;
 });
 
-// noBtn.addEventListener("click", () => {
-//     yesScale += 2;
+noBtn.addEventListener("click", () => {
+     yesScale += 2;
 
-//     if (yesBtn.style.position !== "fixed") {
-//         yesBtn.style.position = "fixed";
-//         yesBtn.style.top = "50%";
-//         yesBtn.style.left = "50%";
-//         yesBtn.style.transform = `translate(-50%, -50%) scale(${yesScale})`;
-//     }else{
-//         yesBtn.style.transform = `translate(-50%, -50%) scale(${yesScale})`;
-//     }
-// });
+     if (yesBtn.style.position !== "fixed") {
+         yesBtn.style.position = "fixed";
+         yesBtn.style.top = "50%";
+         yesBtn.style.left = "50%";
+         yesBtn.style.transform = `translate(-50%, -50%) scale(${yesScale})`;
+     }else{
+         yesBtn.style.transform = `translate(-50%, -50%) scale(${yesScale})`;
+     }
+});
 
 // YES is clicked
 
