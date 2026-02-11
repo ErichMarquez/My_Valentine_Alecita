@@ -19,7 +19,13 @@ envelope.addEventListener("click", () => {
         document.querySelector(".letter-window").classList.add("open");
     },50);
 });
+// Logic to make YES btn to grow
 
+let yesScale = 1;
+
+yesBtn.style.position = "relative"
+yesBtn.style.transformOrigin = "center center";
+yesBtn.style.transition = "transform 0.3s ease";
 // Logic to move the NO btn
 
 noBtn.addEventListener("mouseover", () => {
@@ -39,14 +45,6 @@ noBtn.addEventListener("mouseover", () => {
     yesScale += 0.35;
     yesBtn.style.transform = `scale(${yesScale})`;
 });
-
-// Logic to make YES btn to grow
-
-let yesScale = 1;
-
-yesBtn.style.position = "relative"
-yesBtn.style.transformOrigin = "center center";
-yesBtn.style.transition = "transform 0.3s ease";
 
 // noBtn.addEventListener("click", () => {
 //     yesScale += 2;
